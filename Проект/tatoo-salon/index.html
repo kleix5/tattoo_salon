@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тату-салон "Ink & Art"</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <style>
+        @font-face {
+            font-family: 'Playfair Display';
+            src: local('Georgia'), local('Times New Roman');
+        }
+        @font-face {
+            font-family: 'Poppins';
+            src: local('Arial'), local('Helvetica Neue');
+        }
+        .fas, .fab {
+            font-family: 'IconFont', Arial, sans-serif !important;
+            speak: never;
+        }
+        .fa-ink-pen::before { content: "🎨"; font-size: 1.5em; display: inline-block; margin-right: 8px; }
+        .fa-map-marker-alt::before { content: "📍"; margin-right: 5px; }
+        .fa-phone::before { content: "📞"; margin-right: 5px; }
+        .fa-envelope::before { content: "✉️"; margin-right: 5px; }
+        .fa-clock::before { content: "⏰"; margin-right: 5px; }
+        .fa-instagram::before { content: "📷"; font-size: 1.2em; }
+        .fa-vk::before { content: "📢"; font-size: 1.2em; }
+        .fa-telegram::before { content: "💬"; font-size: 1.2em; }
+        .close::before { content: "×"; font-size: 2em; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-ink-pen"></i>
+                <span>Ink & Art</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">Мастера</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Искусство татуировки</h1>
+                <p>Создаем уникальные образы, оставляя их на вашей коже</p>
+                <a href="#gallery" class="btn">Посмотреть работы</a>
+                <a href="#contact" class="btn btn-outline">Записаться</a>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>Наши мастера</h2>
+                <p>Наша команда профессионалов с многолетним опытом создания неповторимых татуировок. Каждый мастер обладает уникальным стилем и подходом к клиенту.</p>
+                <div class="team">
+                    <div class="team-member">
+                        <img src="/static/images/2.jpg" alt="Алексей" onerror="this.src='./static/images/2.jpg'">
+                        <h3>Алексей "Black Shadow"</h3>
+                        <p>Специализация: черно-серая графика</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="/static/images/3.jpg" alt="Мария" onerror="this.src='./static/images/3.jpg'">
+                        <h3>Мария "Color Soul"</h3>
+                        <p>Специализация: watercolor, цветные композиции</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="/static/images/4.jpg" alt="Иван" onerror="this.src='./static/images/4.jpg'">
+                        <h3>Иван "Fine Line"</h3>
+                        <p>Специализация: дотворк, минимализм</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Наши работы</h2>
+            <p>Выберите стиль татуировки</p>
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="all">Все</button>
+                <button class="tab-btn" data-category="blackwork">Blackwork</button>
+                <button class="tab-btn" data-category="color">Color</button>
+                <button class="tab-btn" data-category="minimal">Minimal</button>
+                <button class="tab-btn" data-category="realism">Realism</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="blackwork">
+                    <img src="/static/images/5.jpg" alt="Blackwork" onerror="this.src='./static/images/5.jpg'">
+                    <div class="overlay">
+                        <h3>Blackwork</h3>
+                        <p>Мастер: Алексей</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="color">
+                    <img src="/static/images/6.jpg" alt="Color" onerror="this.src='./static/images/6.jpg'">
+                    <div class="overlay">
+                        <h3>Watercolor</h3>
+                        <p>Мастер: Мария</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="minimal">
+                    <img src="/static/images/7.jpg" alt="Minimal" onerror="this.src='./static/images/7.jpg'">
+                    <div class="overlay">
+                        <h3>Minimal</h3>
+                        <p>Мастер: Иван</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="realism">
+                    <img src="/static/images/8.jpg" alt="Realism" onerror="this.src='./static/images/8.jpg'">
+                    <div class="overlay">
+                        <h3>Realism</h3>
+                        <p>Мастер: Алексей</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="blackwork">
+                    <img src="/static/images/9.jpg" alt="Blackwork 2" onerror="this.src='./static/images/9.jpg'">
+                    <div class="overlay">
+                        <h3>Blackwork II</h3>
+                        <p>Мастер: Алексей</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="color">
+                    <img src="/static/images/10.jpg" alt="Color 2" onerror="this.src='./static/images/10.jpg'">
+                    <div class="overlay">
+                        <h3>Floral</h3>
+                        <p>Мастер: Мария</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="realism">
+                    <img src="/static/images/11.jpg" alt="Realism 2" onerror="this.src='./static/images/11.jpg'">
+                    <div class="overlay">
+                        <h3>Portrait</h3>
+                        <p>Мастер: Иван</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="minimal">
+                    <img src="/static/images/12.jpg" alt="Minimal 2" onerror="this.src='./static/images/12.jpg'">
+                    <div class="overlay">
+                        <h3>Symmetry</h3>
+                        <p>Мастер: Мария</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lightbox">
+                <span class="close"></span>
+                <img class="lightbox-img" src="" alt="">
+                <div class="lightbox-caption"></div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Контакты</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Адрес и время работы</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Старая, 42</p>
+                    <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+                    <p><i class="fas fa-envelope"></i> info@inkandart.ru</p>
+                    <p><i class="fas fa-clock"></i> Пн-Вс: 10:00-21:00</p>
+                </div>
+                <div class="contact-form">
+                    <form id="bookingForm">
+                        <h3>Записаться на татуировку</h3>
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                        <input type="tel" name="phone" placeholder="Телефон" required>
+                        <textarea name="description" placeholder="Описание татуировки" rows="4"></textarea>
+                        <select name="style">
+                            <option value="">Выберите стиль</option>
+                            <option value="Blackwork">Blackwork</option>
+                            <option value="Color">Color</option>
+                            <option value="Minimal">Minimal</option>
+                            <option value="Realism">Realism</option>
+                        </select>
+                        <button type="submit" class="btn">Записаться</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="logo">
+                        <i class="fas fa-ink-pen"></i>
+                        <span>Ink & Art</span>
+                    </div>
+                    <p>Создаем татуировки, которые становятся частью вашей истории</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#about">Мастера</a></li>
+                        <li><a href="#gallery">Галерея</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Тату-салон "Ink & Art". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
